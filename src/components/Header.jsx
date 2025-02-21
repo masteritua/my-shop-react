@@ -33,7 +33,6 @@ const Header = () => {
                 </Container>
             </Navbar>
 
-            {/* Попап корзини */}
             <Modal show={showCart} onHide={handleCloseCart} size="lg">
                 <Modal.Header closeButton>
                     <Modal.Title>Your Cart</Modal.Title>

@@ -43,7 +43,6 @@ const Home = () => {
 
     return (
         <Row>
-            {/* Категорії зліва */}
             <Col md={3}>
                 <ListGroup>
                     <ListGroup.Item
@@ -68,12 +67,10 @@ const Home = () => {
                 </ListGroup>
             </Col>
 
-            {/* Список товарів */}
             <Col md={9}>
-                <h1>{getCategoryTitle()}</h1> {/* Динамічний заголовок */}
+                <h1>{getCategoryTitle()}</h1>
                 <ProductList products={paginatedProducts} />
 
-                {/* Пагінація */}
                 {totalPages > 1 && (
                     <Pagination className="mt-4">
                         <Pagination.Prev

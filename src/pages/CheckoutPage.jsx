@@ -61,7 +61,6 @@ const CheckoutPage = () => {
                 </Alert>
             ) : (
                 <>
-                    {/* Відображення товарів у корзині */}
                     <Table striped bordered hover className="mb-4">
                         <thead>
                         <tr>
@@ -83,10 +82,8 @@ const CheckoutPage = () => {
                         </tbody>
                     </Table>
 
-                    {/* Загальна вартість */}
                     <h4 className="mb-4">Total: ${totalPrice.toFixed(2)}</h4>
 
-                    {/* Форма оформлення замовлення */}
                     <Form onSubmit={handleSubmit}>
                         <Form.Group className="mb-3" controlId="formName">
                             <Form.Label>Full Name</Form.Label>
